@@ -1,3 +1,5 @@
 "Main","Principal"
 "URL Conversaa","Instance conversaa liée"
 "Enter your Conversaa URL","Entrez l'url de l'instance conversaa liée"
+"Url format not valid","Vous devez entrer une url correcte"
+"The url must not end with a slash","L'url entrée ne doit pas finir par un slash"

@@ -20,6 +20,7 @@
                     <fields>
                         <conversaa_url translate="label">
                             <label>URL Conversaa</label>
+                            <backend_model>conversaa/validation</backend_model>
                             <comment>Enter your Conversaa URL</comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>1</sort_order>

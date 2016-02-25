@@ -6,6 +6,11 @@
         </Canalweb_Conversaa>
     </modules>
     <global>
+        <models>
+            <conversaa>
+                <class>Canalweb_Conversaa_Model</class>
+            </conversaa>
+        </models>
         <helpers>
             <conversaa>
                 <class>Canalweb_Conversaa_Helper</class>
