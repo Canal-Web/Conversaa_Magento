@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Canalweb_Conversaa>
+            <version>0.0.1</version>
+        </Canalweb_Conversaa>
+    </modules>
+    <global>
+        <helpers>
+            <conversaa>
+                <class>Canalweb_Conversaa_Helper</class>
+            </conversaa>
+        </helpers>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <conversaa translate="title">
+                                            <title>Conversaa</title>
+                                        </conversaa>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <translate>
+            <modules>
+                <translations>
+                    <files>
+                        <default>Canalweb_Conversaadmin.csv</default>
+                    </files>
+                </translations>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>

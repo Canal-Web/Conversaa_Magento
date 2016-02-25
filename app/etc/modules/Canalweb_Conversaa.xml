@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Canalweb_Conversaa>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Canalweb_Conversaa>
+    </modules>
+</config>
