@@ -1,0 +1,12 @@
+<layout version="0.1.0">
+	<default>
+		<reference name="footer">
+			<!-- footer block does not support addJs/addItem methods so we create a block instead -->
+			<block type="core/text" name="conversaa_js">
+				<action method="setText">
+					<text><![CDATA[<script src="/js/conversaa.js"></script>]]></text>
+				</action>
+		   </block>
+		</reference>
+	</default>
+</layout>

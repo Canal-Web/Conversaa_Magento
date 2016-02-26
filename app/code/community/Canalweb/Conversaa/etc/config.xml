@@ -17,6 +17,26 @@
             </conversaa>
         </helpers>
     </global>
+    <frontend>
+        <layout>
+            <updates>
+                <conversaa>
+                    <file>canalweb_conversaa.xml</file>
+                </conversaa>
+            </updates>
+        </layout>
+        <events>
+            <controller_action_layout_generate_blocks_after>
+                <observers>
+                    <conversaa_addJs>
+                        <type>singleton</type>
+                        <class>conversaa/observer</class>
+                        <method>addJavascriptBlock</method>
+                    </conversaa_addJs>
+                </observers>
+            </controller_action_layout_generate_blocks_after>
+        </events>
+    </frontend>
     <adminhtml>
         <acl>
             <resources>
