@@ -1,0 +1,5 @@
+src/app/code/community/Canalweb/Conversaa                          app/code/community/Canalweb/Conversaa                         
+src/app/design/frontend/base/default/layout/canalweb_conversaa.xml app/design/frontend/base/default/layout/canalweb_conversaa.xml
+src/app/etc/modules/Canalweb_Conversaa.xml                         app/etc/modules/Canalweb_Conversaa.xml                        
+src/app/locale/fr_FR/Canalweb_Conversaadmin.csv                    app/locale/fr_FR/Canalweb_Conversaadmin.csv                   
+src/js/conversaa.js                                                js/conversaa.js                                               
