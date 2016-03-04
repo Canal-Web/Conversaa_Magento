@@ -28,6 +28,33 @@
                             <show_in_website>1</show_in_website>
                             <show_in_store>1</show_in_store>
                         </conversaa_url>
+                        <conversaa_client_key translate="label">
+                            <label>Client Key</label>
+                            <comment>The Conversaa Client Key</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </conversaa_client_key>
+                        <conversaa_secret_key translate="label">
+                            <label>Secret Key</label>
+                            <comment>The Conversaa Secret Key</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </conversaa_secret_key>
+                        <conversaa_callback_url translate="label">
+                            <label>Callback Url</label>
+                            <comment>Callback url after authentication</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </conversaa_callback_url>
                     </fields>
                 </main>
             </groups>
