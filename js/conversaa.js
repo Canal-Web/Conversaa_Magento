@@ -1,5 +1,5 @@
 jQuery.conversaaPixel = function conversaaPixel() {
-  var title = document.title;
+  var title = escape(document.title);
   var url = window.location.href;
   var ref = document.referrer;
   var userLang = navigator.language || navigator.userLanguage;
