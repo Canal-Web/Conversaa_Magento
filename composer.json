@@ -1,0 +1,17 @@
+{
+    "name": "canal-web/conversaa-magento",
+    "type": "magento-module",
+    "description": "Conversaa for magento",
+    "require": {
+    },
+    "authors":[
+        {
+            "name":"Déborah Jean",
+            "email":"deborah@canal-web.fr"
+        }
+        ,{
+            "name":"Fabio Cerqueira",
+            "email":"fabio@canal-web.fr"
+        }
+    ]
+}
