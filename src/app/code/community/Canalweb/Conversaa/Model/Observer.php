@@ -8,15 +8,16 @@ class Canalweb_Conversaa_Model_Observer
         $conversaa_url = Mage::getStoreConfig('conversaa/main/conversaa_url',Mage::app()->getStore());
         $conversaa_method =  Mage::getStoreConfig('conversaa/main/conversaa_method',Mage::app()->getStore());
         if(!empty($conversaa_url)){
+            $mail = Mage::getSingleton('customer/session')->getCustomer()->getEmail();
             if($conversaa_method == 'js'){
                 $content = '
                 <script type="text/javascript">
                     // Create var with our value from back-office settings (needed in js/conversaa.js)
-                    conversaaUrl = "' . $conversaa_url . '"
+                    conversaaUrl = "' . $conversaa_url . ';"
+                    conversaaMail = "' . $mail . ';"
                 </script>
                 ';
             }elseif ($conversaa_method == 'php') {
-                $mail = Mage::getSingleton('customer/session')->getCustomer()->getEmail();
                 $d = urlencode(base64_encode(serialize(array(
                     'page_url'   => 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
                     'referrer' => $_SERVER['HTTP_REFERER'],
