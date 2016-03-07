@@ -16,16 +16,15 @@ class Canalweb_Conversaa_Model_Observer
                 </script>
                 ';
             }elseif ($conversaa_method == 'php') {
-                $headBlock = $this->getLayout()->getBlock('head');
-                $title = ($headBlock)? $headBlock->getTitle() : '';
                 $mail = Mage::getSingleton('customer/session')->getCustomer()->getEmail();
                 $d = urlencode(base64_encode(serialize(array(
                     'page_url'   => 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
-                    'page_title' => $title,
+                    'referrer' => $_SERVER['HTTP_REFERER'],
+                    'ip' =>  $_SERVER['REMOTE_ADDR'],
                     'email' => $mail
                 ))));
 
-                $content = '<img src="http://'.$conversaa_url.'/mtracking.gif?d=' . $d . '" style="display: none;" />';
+                $content = '<img src="'.$conversaa_url.'/mtracking.gif?d=' . $d . '" style="display: none;" />';
             }
             $block = $layout->createBlock('core/text');
             $block->setText($content);
