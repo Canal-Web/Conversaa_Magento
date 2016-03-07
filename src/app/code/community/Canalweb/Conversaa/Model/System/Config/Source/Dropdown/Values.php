@@ -1,6 +1,6 @@
 <?php
 
-class Canalweb_Model_System_Config_Source_Dropdown_Values
+class Canalweb_Conversaa_Model_System_Config_Source_Dropdown_Values
 {
     public function toOptionArray()
     {
