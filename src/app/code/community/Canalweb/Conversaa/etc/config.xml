@@ -35,7 +35,25 @@
                     </conversaa_addJs>
                 </observers>
             </controller_action_layout_generate_blocks_after>
+            <controller_front_init_before>
+                <observers>
+                    <add_composer_autoloader>
+                        <type>singleton</type>
+                        <class>Flux_Flux_Model_Observer</class>
+                        <method>addComposerAutoloader</method>
+                    </add_composer_autoloader>
+                </observers>
+            </controller_front_init_before>
         </events>
+        <routers>
+           <conversaa>
+               <use>standard</use>
+               <args>
+                   <module>Canalweb_Conversaa</module>
+                   <frontName>conversaa</frontName>
+               </args>
+           </conversaa>
+       </routers>
     </frontend>
     <adminhtml>
         <acl>
