@@ -13,8 +13,8 @@ class Canalweb_Conversaa_Model_Observer
                 $content = '
                 <script type="text/javascript">
                     // Create var with our value from back-office settings (needed in js/conversaa.js)
-                    conversaaUrl = "' . $conversaa_url . ';"
-                    conversaaMail = "' . $mail . ';"
+                    conversaaUrl = "' . $conversaa_url . '";
+                    conversaaMail = "' . $mail . '";
                 </script>
                 ';
             }elseif ($conversaa_method == 'php') {
