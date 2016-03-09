@@ -32,7 +32,7 @@ class Canalweb_Conversaa_Model_Observer
             $layout->getBlock('head')->append($block);
         }
     }
-    
+
     public function addComposerAutoloader($event) {
         require_once Mage::getBaseDir() . '/vendor/autoload.php';
     }

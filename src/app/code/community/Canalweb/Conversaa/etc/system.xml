@@ -17,6 +17,7 @@
                     <show_in_default>1</show_in_default>
                     <show_in_website>1</show_in_website>
                     <show_in_store>1</show_in_store>
+                    <comment><![CDATA[Please fill these fields and then click on the follwing link. <a href="/conversaa/oauth/generate">Genereate the tokens</a>]]></comment>
                     <fields>
                         <conversaa_url translate="label">
                             <label>URL Conversaa</label>
@@ -67,6 +68,26 @@
                         </conversaa_callback_url>
                     </fields>
                 </main>
+                <tokens translate="label">
+                    <label>Access Tokens</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment><![CDATA[These fields are automatically filled, please do not edit them.]]></comment>
+                    <fields>
+                        <serialized_tokens translate="label">
+                            <label>Serialized tokens</label>
+                            <comment>Automatic content, do not edit this field manually.</comment>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </serialized_tokens>
+                    </fields>
+                </tokens>
             </groups>
         </conversaa>
     </sections>
