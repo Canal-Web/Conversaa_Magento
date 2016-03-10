@@ -4,7 +4,7 @@ jQuery.conversaaPixel = function conversaaPixel(urlTracking) {
   var ref = document.referrer;
   var userLang = navigator.language || navigator.userLanguage;
 
-  var trackingPixel = urlTracking + "/mtracking.gif?url=" + encodeURIComponent(url) + "&title=" + encodeURIComponent(title)+ "&language=" + encodeURIComponent(userLang)+"&referrer="+encodeURIComponent(ref)+"&email="+encodeURIComponent(conversaaMail);
+  var trackingPixel = urlTracking + "/mtracking.gif?url=" + encodeURIComponent(url) + "&title=" + encodeURIComponent(title)+ "&language=" + encodeURIComponent(userLang)+"&referrer="+encodeURIComponent(ref)+"&ip="+encodeURIComponent(conversaaIp)+"&email="+encodeURIComponent(conversaaMail);
   return trackingPixel;
 }
 jQuery(document).ready(function($) {

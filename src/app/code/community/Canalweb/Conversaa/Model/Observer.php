@@ -15,6 +15,7 @@ class Canalweb_Conversaa_Model_Observer
                     // Create var with our value from back-office settings (needed in js/conversaa.js)
                     conversaaUrl = "' . $conversaa_url . '";
                     conversaaMail = "' . $mail . '";
+                    conversaaIp = "'. $_SERVER['REMOTE_ADDR'].'";
                 </script>
                 ';
             }elseif ($conversaa_method == 'php') {
