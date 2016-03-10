@@ -9,5 +9,5 @@ jQuery.conversaaPixel = function conversaaPixel(urlTracking) {
 }
 jQuery(document).ready(function($) {
   var pixel = $.conversaaPixel(conversaaUrl);
-  $('body').append("<img src='"+pixel+"' />");
+  $('body').append("<img src='"+pixel+"' style='display:none;' />");
 });
